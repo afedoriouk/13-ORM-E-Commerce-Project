@@ -49,6 +49,10 @@ https://user-images.githubusercontent.com/98120553/177068526-0051194e-eb6c-47fa-
 
 
 
+https://user-images.githubusercontent.com/98120553/177068947-159727c4-c627-4be3-bb02-963f42bbe2e7.mp4
+
+
+
 
 
 The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:
