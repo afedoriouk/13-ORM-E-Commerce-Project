@@ -55,6 +55,13 @@ https://user-images.githubusercontent.com/98120553/177068947-159727c4-c627-4be3-
 
 
 
+https://user-images.githubusercontent.com/98120553/177069434-12711ab8-afd8-46ef-924f-2cdf1e8f5ea8.mp4
+
+
+
+
+
+
 The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:
 
 ![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](./Assets/13-orm-homework-demo-01.gif)
