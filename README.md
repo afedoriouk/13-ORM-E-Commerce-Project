@@ -36,6 +36,14 @@ THEN I am able to successfully create, update, and delete data in my database
 
 The following animations show examples of the application's API routes being tested in Insomnia.
 
+
+https://user-images.githubusercontent.com/98120553/177064906-ba0231d5-a894-4db2-990b-0ed70391108a.mp4
+
+
+
+
+
+
 The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:
 
 ![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](./Assets/13-orm-homework-demo-01.gif)
