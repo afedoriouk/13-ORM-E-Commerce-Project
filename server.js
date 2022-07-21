@@ -14,5 +14,5 @@ app.use(routes);
 
 //sync sequlize models with the DB. Turn ON server after that
 sequalize.sync({force:false}).then(() =>{
-    app.listen(PORT,()=> console.log('Now listening'));
+    app.listen(PORT,()=> console.log('PORT 3001 is ON'));
 });
