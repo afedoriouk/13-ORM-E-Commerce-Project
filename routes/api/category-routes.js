@@ -1,9 +1,11 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-// The `/api/categories` endpoint
+// The /api/categories endpoint
 
 router.get('/', (req, res) => {
+
+
   // find all categories
   Category.findAll({
     include: 
@@ -11,7 +13,8 @@ router.get('/', (req, res) => {
         attributes:["id", "product_name"]
       }
   
-  }).then(categoryDataDb => {
+  })
+  .then(categoryDataDb => {
     if (!categoryDataDb){
   
     res.status(404).json(categoryDataDb);
@@ -26,7 +29,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-  
+
   // find one category by its ID value
 
   Category.findOne({
@@ -101,7 +104,8 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(categoryDataDb =>{
+  })
+  .then(categoryDataDb =>{
     if(!categoryData) {
       res.status(404).json( "No category found using this id");
     return;
