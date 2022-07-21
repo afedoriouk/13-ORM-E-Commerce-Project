@@ -11,19 +11,19 @@ router.get('/', (req, res) => {
         attributes:["id", "product_name"]
       }
   
-  }).then(CategoryDataDb => {
-    if (!dbCategoryData){
+  }).then(categoryDataDb => {
+    if (!categoryDataDb){
   
     res.status(404).json(categoryDataDb);
     return;
-  })
+  }})
   .catch(err => {
     console.log(err);
   });
+
+  // include associated Products with this category
+
 })
-  // be sure to include its associated Products
-
-
 router.get('/', (req, res) => {
   // find one category by its `id` value
 
@@ -31,14 +31,14 @@ router.get('/', (req, res) => {
     where: {
       id: req.params.id
     },
-    include:model: Product,
+    include:{model: Product,
     
     attributes: ["id", "Product_name"]
-  }
+  }}
   )
   .then(categoryDataDb => {
     if(!dbCategoryData){
-      res.status(404).json({message:'No Category found with this id'});
+      res.status(404).json('No Category found with this id');
       return;
     }
     res.json(categoryDataDb)
