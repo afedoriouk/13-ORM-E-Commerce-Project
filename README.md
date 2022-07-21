@@ -172,4 +172,4 @@ Google Search
 
 
 ## Deployment
-[Deployment](https://github.com/afedoriouk/13-ORM-E-Commerce-Project)
+[Object Relational Mapping ORM](https://github.com/afedoriouk/13-ORM-E-Commerce-Project)
