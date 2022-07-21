@@ -75,7 +75,6 @@ Use the `schema.sql` file in the `db` folder to create your database using MySQL
 
 ### Database Models
 
-Database should contain the following four models, including the requirements listed for each model:
 
 - `Category`
 
@@ -161,9 +160,6 @@ Database should contain the following four models, including the requirements li
 - `Tag` belongs to many `Product` models.
 
 
-
-
-
 ### Seed the Database
 
 `npm run seed` 
@@ -176,3 +172,4 @@ Google Search
 
 
 ## Deployment
+[Deployment](https://github.com/afedoriouk/13-ORM-E-Commerce-Project)
