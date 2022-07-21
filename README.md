@@ -6,7 +6,8 @@ I the last several years e-commerce industry exceeded all expectation and have b
 ## User Story
 
 ```md
-Retail companies are looking to establish the  e-commerce website that uses the latest technologies. Retail companies have compete with other e-commerce companies in the internet space due to multiple channels of availability of the products and steep competition.
+Retail companies are looking to establish the </br>
+e-commerce website that uses the latest technologies. Retail companies have compete with other e-commerce companies in the internet space due to multiple channels of availability of the products and steep competition.
 ```
 
 ## Acceptance Criteria
