@@ -6,26 +6,19 @@ I the last several years e-commerce industry exceeded all expectation and have b
 ## User Story
 
 ```md
-Retail companies are looking to establish the e-commerce website 
-that uses the latest technologies. Retail companies have compete 
+Many retail companies are looking to establish the e-commerce website 
+that use the latest technologies. The retail companies have to compete 
 with other e-commerce companies in the internet space due to multiple 
-channels of availability of the products and steep competition.
+channels of the products availability and the steep competition.
 ```
 
-## Acceptance Criteria
+## Implementation
 
 ```md
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
+Use of Express.js API and MySQL
+Connecting to a database using Sequelize
+API GET routes in Insomnia for categories or products
+
 ```
 
 ## Mock-Up
@@ -55,9 +48,6 @@ The second animation shows GET routes to return a single category, a single prod
 https://user-images.githubusercontent.com/98120553/177069434-12711ab8-afd8-46ef-924f-2cdf1e8f5ea8.mp4
 
 
-
-
-
 https://user-images.githubusercontent.com/98120553/177069822-9f4e096e-e513-42de-867e-229f3bfe549e.mp4
 
 
@@ -70,23 +60,22 @@ https://user-images.githubusercontent.com/98120553/177070882-54e2ea53-b42b-4110-
 
 The video shows the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
 
-## Getting Started
+## Technologies and Commands
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and
+[MySQL2](https://www.npmjs.com/package/mysql2) 
 Terminal command: `npm i mysql2`
 
-[Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your
+[Sequelize](https://www.npmjs.com/package/sequelize)
 Terminal line command: `npm i sequelize`
 
-Express.js API to a MySQL database and the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like your MySQL username, password, and database name.
-
+[dotenv package](https://www.npmjs.com/package/dotenv) 
 Terminal line command `npm i dotenv`
 
 Use the `schema.sql` file in the `db` folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name.
 
 ### Database Models
 
-Your database should contain the following four models, including the requirements listed for each model:
+Database should contain the following four models, including the requirements listed for each model:
 
 - `Category`
 
@@ -164,42 +153,26 @@ Your database should contain the following four models, including the requiremen
 
 ### Associations
 
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
-
 - `Product` belongs to `Category`, as a category can have multiple products but a product can only belong to one category.
-
 - `Category` has many `Product` models.
 
 - `Product` belongs to many `Tag` models. Using the `ProductTag` through model, allow products to have multiple tags and tags to have many products.
 
 - `Tag` belongs to many `Product` models.
 
-**Hint**: Make sure you set up foreign key relationships that match the column we created in the respective models.
 
-### Fill out the API Routes to Perform RESTful CRUD Operations
 
-Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
 
-**Note**: The functionality for creating the many-to-many relationship for products is already done for you.
-
-**Hint**: Be sure to look at your module project's code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
 
 ### Seed the Database
 
-After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
-
+`npm run seed` 
 ### Sync Sequelize to the Database on Server Start
 
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
+ `server.js`
 
-## Review
+## Source
+Google Search 
 
-You are required to submit BOTH of the following for review:
 
-- A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Deployment
