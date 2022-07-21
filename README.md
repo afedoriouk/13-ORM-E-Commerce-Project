@@ -31,17 +31,41 @@ The following animations show examples of the application's API routes being tes
 
 The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:
 
-![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](./Assets/13-orm-homework-demo-01.gif)
+![In Insomnia, the user tests “GET tags"]
+https://user-images.githubusercontent.com/98120553/177064906-ba0231d5-a894-4db2-990b-0ed70391108a.mp4
+
+![“GET Categories”]
+
+https://user-images.githubusercontent.com/98120553/177068526-0051194e-eb6c-47fa-8f18-8862a9b7d1d9.mp4
+
+
+![“GET All Products.”]
+
+https://user-images.githubusercontent.com/98120553/177068947-159727c4-c627-4be3-bb02-963f42bbe2e7.mp4
+
+
 
 The second animation shows GET routes to return a single category, a single product, and a single tag being tested in Insomnia:
 
-![In Insomnia, the user tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](./Assets/13-orm-homework-demo-02.gif)
+![In Insomnia, the user tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”]
+
+https://user-images.githubusercontent.com/98120553/177069434-12711ab8-afd8-46ef-924f-2cdf1e8f5ea8.mp4
+
+
+
+
+
+https://user-images.githubusercontent.com/98120553/177069822-9f4e096e-e513-42de-867e-229f3bfe549e.mp4
+
+
 
 The final animation shows the POST, PUT, and DELETE routes for categories being tested in Insomnia:
 
-![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
+![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”]
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
+https://user-images.githubusercontent.com/98120553/177070882-54e2ea53-b42b-4110-9871-fdbdbc579ce8.mp4
+
+The video shows the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
 
 ## Getting Started
 
