@@ -6,44 +6,59 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   Category.findAll({
-    include: [
-      { model: Product
+    include: 
+      { model: Product,
+        attributes:["id", "product_name"]
       }
-    ]
-  }).then(categoryData => res.json(categoryData))
+  
+  }).then(CategoryDataDb => {
+    if (!dbCategoryData){
+  
+    res.status(404).json(categoryDataDb);
+    return;
+  })
   .catch(err => {
-    res.status(500).json(err);
+    console.log(err);
   });
+})
   // be sure to include its associated Products
-});
+
 
 router.get('/', (req, res) => {
   // find one category by its `id` value
-  
+
   Category.findOne({
     where: {
       id: req.params.id
     },
-    include:[{model: Product}]
-  }).then(categoryData => {
-    if(!categoryData){
+    include:model: Product,
+    
+    attributes: ["id", "Product_name"]
+  }
+  )
+  .then(categoryDataDb => {
+    if(!dbCategoryData){
       res.status(404).json({message:'No Category found with this id'});
       return;
     }
-    res.json(categoryData)
+    res.json(categoryDataDb)
   }).catch(err => {
     console.log(err);
     res.status(500).json(err);
   });
-  // be sure to include its associated Products
 });
 
+  // be sure to include its associated Products
+
+
 router.post('/', (req, res) => {
+
+
   // create a new category
   Category.create({
     category_name: req.body.category_name
   })
-  .then(categoryData => res.json(categoryData))
+  .then(categoryDataDb => res.json(categoryDataDb))
   .catch(err =>{
     console.log(err);
     res.status(500).json(err);
@@ -51,6 +66,8 @@ router.post('/', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
+
+
   // update a category by its `id` value
   Category.update(
     {
@@ -61,12 +78,12 @@ router.put('/:id', (req, res) => {
         id:req.params.id
       }
     }
-  ).then(categoryData =>{
-    if (!categoryData){
-      res.status(404).json({message:"No category foundwith this id"});
+  ).then(categoryDataDb =>{
+    if (!categoryDataDb){
+      res.status(404).json("No category foundwith this id");
       return;
     }
-    res.json(categoryData);
+    res.json(categoryDataDb);
   })
   .catch(err => {
     console.log(err);
@@ -75,17 +92,19 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+
+
   // delete a category by its `id` value
-  Category.destroy({
+  Category.delete({
     where: {
       id: req.params.id
     }
-  }).then(categoryData =>{
+  }).then(categoryDataDb =>{
     if(!categoryData) {
-      res.status(404).json({message: "No category found using this id"});
+      res.status(404).json( "No category found using this id");
     return;
     }
-    res.json(categoryData);
+    res.json(categoryDataDb);
   })
   .catch(err =>{
     console.log(err);
